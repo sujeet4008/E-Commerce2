@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Online</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="output.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+            width: auto;
+
+        }
+        #men-section{
+            position: absolute;
+            top: 75px;
+            background-color: whitesmoke;
+            width:500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            display: none;
+        }
+        #women-section{
+            position: absolute;
+            top: 75px;
+            
+            background-color: whitesmoke;
+            width:500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            display: none;
+        }
+        #kids-section{
+            position: absolute;
+            top: 75px;
+            
+            background-color: whitesmoke;
+            width:500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            display: none;
+        }
+        #beauty-section{
+            position: absolute;
+            top: 75px;
+            display: none;
+            background-color: whitesmoke;
+            width:450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            display: none;
+        }
+        #homeliving-section{
+            position: absolute;
+            top: 75px;
+           
+            background-color: whitesmoke;
+            width:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            display: none;
+        }
+        #studio-section{
+            position: absolute;
+            top: 75px;
+           
+            background-color: whitesmoke;
+            width:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            display: none;
+        }
+
+        #sort-btn{
+            position: relative;
+            /* z-index: 1; */
+        }
+        #recommendend-btn{
+            position: absolute;
+            top: 31px;
+            right: -1px;
+            display: none;
+        }
+
+       
+    </style>
+
+
+</head>
+
+<body id="body" class="bg-white h-screen text-black w-auto">
+
+
+    <!-- home nav bar start here  -->
+
+   
+    <div class="fixed right-0 left-0 top-0 z-30">
+
+        <div class="flex justify-between items-center h-[75px] bg-white shadow-lg shadow-slate-400 relative">
+            <div class="lg:ml-5">
+                <h1 class="text-2xl sm:text-[20px] md:text-[30px] ml-4 text-black">
+                    ᖴᗝᗝ丅ᗯᗴᗩᖇ
+                </h1>
+            </div>
+
+            <!-- home nav bar start here -->
+
+            <div id="home-nav-bar" class="hidden md:block lg:ml-[13rem] w-[400px]">
+                <ul
+                    class="flex w-[380px] justify-between items-center text-center text-black text-[13px] font-medium p-1 mr-10">
+
+                    <li id="Men"
+                        class=" border-red-500 hover:border-b-[3px] px-2 h-[75px] grid place-content-center  cursor-pointer relative">
+                        MEN
+
+                        <div id="men-section" class="hidden z-40">
+                            <div class="">
+                                <h1 class="mb-3 text-base font-bold">For Mens</h1>
+                                <div class="flex flex-row text-start">
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                    <ul class="mx-10">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                       
+                                    </ul>
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+
+
+
+                    <li id="women"
+                        class="border-pink-600 hover:border-b-[3px] px-2 h-[75px] grid place-content-center  cursor-pointer relative">
+                        WOMEN
+                    
+                        <div id="women-section" class=" z-40">
+                            <div class="">
+                                <h1 class="mb-3 text-base font-bold">For Mens</h1>
+                                <div class="flex flex-row text-start">
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                    <ul class="mx-10">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                       
+                                    </ul>
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </li>
+
+
+                    <li id="kids"
+                        class="border-orange-600 hover:border-b-[3px] px-2 h-[75px] grid place-content-center  cursor-pointer relative">
+                        KIDS
+                        
+                        <div id="kids-section" class=" z-40">
+                            <div class="">
+                                <h1 class="mb-3 text-base font-bold">For Mens</h1>
+                                <div class="flex flex-row text-start">
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                    <ul class="mx-10">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                       
+                                    </ul>
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                       
+                    </li>
+
+
+                    <li id="beauty"
+                        class="border-cyan-400 hover:border-b-[3px] px-2 h-[75px] grid place-content-center  cursor-pointer relative">
+                        BEAUTY
+                    
+                        <div id="beauty-section" class=" z-40">
+                            <div class="">
+                                <h1 class="mb-3 text-base font-bold">For Mens</h1>
+                                <div class="flex flex-row text-start">
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                    <ul class="mx-10">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                       
+                                    </ul>
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                    </li>
+
+
+                    <li id="homeliving"
+                        class="border-green-600 hover:border-b-[3px] px-2 h-[75px] grid place-content-center  cursor-pointer relative">
+                        HOME&LIVING
+                    
+                        <div id="homeliving-section" class=" z-40">
+                            <div class="">
+                                <h1 class="mb-3 text-base font-bold">For Mens</h1>
+                                <div class="flex flex-row text-start">
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                 
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                    </li>
+
+
+                    <li id="studio"
+                        class="border-blue-400 hover:border-b-[3px] px-2 h-[75px] grid place-content-center  cursor-pointer relative">
+                        STUDIO
+                    
+                        <div id="studio-section" class=" z-40">
+                            <div class="">
+                                <h1 class="mb-3 text-base font-bold">For Mens</h1>
+                                <div class="flex flex-row text-start">
+                                    <ul class="">
+                                        <h1 class="text-sm font-semibold text-pink-600 mb-1">Branded Shoes</h1>
+                                        <li class="pl-1">Nike</li>
+                                        <li class="pl-1">Addidas</li>
+                                        <li class="pl-1">Puma</li>
+                                        <li class="pl-1">New Balance</li>
+                                        <li class="pl-1">Convrse</li>
+                                        <li class="pl-1">Vans</li>
+                                        <li class="pl-1">Skechers</li>
+                                        <li class="pl-1">Reebook</li>
+                                        <li class="pl-1">Under Armour</li>
+                                        <li class="pl-1">Stride Raid</li>
+                                    </ul>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                    </li>
+                </ul>
+            </div>
+            <div id="sign-up-btn" class="mr-2  text-black w-auto flex items-center">
+                <div class="border-slate-400 hover:border-[1px] shadow-none outline-none rounded-[2px] w-[55px] lg:w-[75px] h-10 mx-1 font-semibold text-xs flex flex-col justify-center items-center"
+                    style="color: #707070;">
+                    <i class="fa-solid fa-user"></i>
+                    <h1>Profile</h1>
+                </div>
+
+                <div class="border-slate-400 hover:border-[1px] shadow-none outline-none rounded-[2px] w-[55px] lg:w-[75px] h-10 mx-1 font-semibold text-xs flex flex-col justify-center items-center"
+                    style="color: #707070;">
+                    <i class="fa-regular fa-heart"></i>
+                    <h1>WishList</h1>
+                </div>
+
+                <div class="border-slate-400 hover:border-[1px] shadow-none outline-none rounded-[2px] w-[55px] lg:w-[75px] h-10 mx-1 font-semibold text-xs flex flex-col justify-center items-center"
+                    style="color: #707070;">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h1>Cart</h1>
+                </div>
+
+                <span id="menu-btn" class="material-symbols-outlined cursor-pointer mr-2">menu</span>
+
+
+            </div>
+
+        </div>
+
+        <!-- hidden side nav bae start here -->
+
+        <div id="side-nav-bar"
+            class="hidden w-[200px] text-black bg-white flex-col float-right z-40  absolute top-0 right-0 h-[100vh] justify-start items-center overflow-hidden">
+            <div class=" ">
+
+                <ul class="flex flex-col w-[280px] justify-between items-center">
+
+                    <span id="close-btn" class="material-symbols-outlined mt-3 cursor-pointer mb-4">close
+                    </span>
+
+                    <li
+                        class="m-1 hover:border-[1px] border-slate-400 w-20 h-10 items-center text-center flex justify-center">
+                        Home</li>
+                    <li
+                        class="m-1 hover:border-[1px] border-slate-400 w-20 h-10 items-center text-center flex justify-center">
+                        About</li>
+                    <li
+                        class="m-1 hover:border-[1px] border-slate-400 w-20 h-10 items-center text-center flex justify-center">
+                        Service</li>
+                    <li
+                        class="m-1 hover:border-[1px] border-slate-400 w-20 h-10 items-center text-center flex justify-center">
+                        Contact</li>
+                </ul>
+            </div>
+            <div class="font-bol flex mt-3">
+                <button onclick="loginpage()"
+                    class=" border-slate-400 hover:border-[1px] rounded-[2px] w-[75px] h-10 m-1">Sign
+                    Up</button>
+                <button onclick="loginpage()"
+                    class=" border-slate-400 hover:border-[1px] rounded-[2px] w-[75px] h-10 m-1">Log
+                    In</button>
+
+            </div>
+        </div>
+        <!-- hidden side nav bar end here -->
+
+    </div>
+
+
+    <!-- home nav bar end here -->
+
+  
+        <!-- countdown start here -->
+
+        <div id="timer" class="h-14 bg-gray-100 flex justify-center items-center mt-20">
+            <h1 class="text-black font-light mr-1">Sales Ends In </h1>
+            <p id="countdown" class="text-red-500"> </p>
+        </div>
+
+        <!-- countdown end here -->
+
+        <div class="ml-4 text-sm mt-3">
+            <p class="text-slate-600">Home/Footwear/<span class="font-semibold text-black">Shoes & Footwear</span></p>
+            <p class="font-semibold">Shoes & Footwear-<span class="font-normal text-slate-600">100 items</span></p>
+        </div>
+
+        <!-- filter start here -->
+        <div class="flex justify-between items-center mt-4">
+            <div
+                class="h-8 border-slate-400 hover:border-[1px] rounded-[2px] ml-1 w-[75px] items-center flex justify-center font-bold">
+                <p>FILTERS</p>
+            </div>
+            <div class="hidden sm:block">
+                <ul class="flex  w-[300px] text-sm text-gray-500 font-light p-1 justify-center items-center ">
+                    <li
+                        class="border-slate-400 hover:border-[1px] rounded-[2px] w-[100px] h-8 flex justify-center items-center">
+                        Bundle <i class="fa-solid fa-arrow-down ml-1" style="color: gray;"></i></li>
+                    <li
+                        class="border-slate-400 hover:border-[1px] rounded-[2px] w-[100px] h-8 flex justify-center items-center">
+                        Country <i class="fa-solid fa-arrow-down ml-1" style="color: gray;"></i></li>
+                    <li
+                        class="border-slate-400 hover:border-[1px] rounded-[2px] w-[100px] h-8 flex justify-center items-center">
+                        Age <i class="fa-solid fa-arrow-down ml-1" style="color: gray;"></i></li>
+                    <li
+                        class="border-slate-400 hover:border-[1px] rounded-[2px] w-[100px] h-8 flex justify-center items-center">
+                        Size <i class="fa-solid fa-arrow-down ml-1" style="color: gray;"></i></li>
+
+                </ul>
+            </div>
+            <div>
+                <div id="sort-btn"
+                    class="px-2 border-[1px] border-slate-400 w-[260px] mr-5 h-8 flex justify-between items-center">
+                    <p class="text-sm">Sort By : <span class="text-sm font-semibold"> Recommendend</span></p>
+                    <i class="fa-solid fa-arrow-down" style="color: gray;"></i>
+
+
+                    <div id="recommendend-btn"
+                        class=" bg-white w-[260px] text-sm border-[1px] border-t-0 border-slate-400 flex flex-col justify-evenly h-[250px] font-light pl-3">
+                        <p class="hover:underline">Recommendend</p>
+                        <p class="hover:underline">What's New</p>
+                        <p class="hover:underline">Popularity</p>
+                        <p class="hover:underline">Better</p>
+                        <p class="hover:underline">Price: High to Low</p>
+                        <p class="hover:underline">Price: Low to High</p>
+                        <p class="hover:underline">Customer Rating</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        </div>
+        <!-- filter end here -->
+        <div class="mt-4">
+            <hr>
+        </div>
+
+        <!-- filter section & collection start here -->
+
+        <div>
+
+            <div class="flex">
+                <div class="float-left h-auto w-[280px] ">
+                    <ul class=" border-[1px] border-y-0 text-[13px] font-medium h-40 flex flex-col justify-center pl-8">
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Men</li>
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Women</li>
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Kids</li>
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Beauty</li>
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Boys</li>
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Girls</li>
+                    </ul>
+
+                    <ul
+                        class=" text-gray-900 border-[1px] text-[13px] font-lighter h-56 flex flex-col justify-center pl-8 overflow-hidden">
+                        <div class="mb-3">
+                            <h1 class="text-[13px] font-bold ">CATEGORIES</h1>
+                        </div>
+
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Casual Shoes<span class="text-[9px] text-slate-500">
+                                (32000)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Heels<span class="text-[9px] text-slate-500">
+                                (2000)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Flats<span class="text-[9px] text-slate-500">
+                                (3200)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Sport Shoes<span class="text-[9px] text-slate-500">
+                                (25400)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Formal Shoes<span class="text-[9px] text-slate-500">
+                                (16589)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Boots<span class="text-[9px]"> (3494)</span>
+                        </li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Booties<span class="text-[9px] text-slate-500">
+                                (32025)</span></li>
+
+                    </ul>
+
+                    <ul
+                        class=" text-gray-900 border-[1px] text-[13px] font-lighter h-56 flex flex-col justify-center pl-8 overflow-hidden">
+                        <div class="mb-1">
+                            <h1 class="text-[13px] font-bold ">BRAND</h1>
+                        </div>
+
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> DressBerry<span class="text-[9px] text-slate-500">
+                                (32000)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Puma<span class="text-[9px] text-slate-500">
+                                (2000)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Inc 5<span class="text-[9px] text-slate-500">
+                                (3200)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Mochi<span class="text-[9px] text-slate-500">
+                                (25400)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Metro<span class="text-[9px] text-slate-500">
+                                (16589)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Roadster<span class="text-[9px]"> (3494)</span>
+                        </li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Campus<span class="text-[9px] text-slate-500">
+                                (32025)</span></li>
+                        <p>+644 more</p>
+                    </ul>
+
+                    <ul
+                        class=" text-gray-900 border-[1px] text-[13px] font-lighter h-48 flex flex-col justify-center pl-8 overflow-hidden">
+                        <div class="mb-1">
+                            <h1 class="text-[13px] font-bold ">PRICE</h1>
+                        </div>
+
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Rs.198 to Rs.9349<span
+                                class="text-[9px] text-slate-500">
+                                (127010)</span></li>
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Rs.9349 to Rs.18500<span
+                                class="text-[9px] text-slate-500">
+                                (3902)</span></li>
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Rs.18500 to Rs.27500<span
+                                class="text-[9px] text-slate-500"> (218)</span></li>
+                        <li><i class="fa-regular fa-circle mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Rs.27500 to Rs.36500<span
+                                class="text-[9px] text-slate-500"> (10)</span></li>
+
+                    </ul>
+
+                    <ul
+                        class=" text-gray-900 border-[1px] text-[13px] font-lighter h-56 flex flex-col justify-center pl-8 overflow-hidden">
+                        <div class="mb-1">
+                            <h1 class="text-[13px] font-bold ">COLOR</h1>
+                        </div>
+
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Black<span class="text-[9px] text-slate-500">
+                                (32000)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> White<span class="text-[9px] text-slate-500">
+                                (2000)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Grey<span class="text-[9px] text-slate-500">
+                                (3200)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Brown<span class="text-[9px] text-slate-500">
+                                (25400)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Blue<span class="text-[9px] text-slate-500">
+                                (16589)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Tan<span class="text-[9px]"> (3494)</span></li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> Navy Blue<span class="text-[9px] text-slate-500">
+                                (32025)</span></li>
+                        <p> +38 more</p>
+                    </ul>
+
+                    <ul
+                        class="text-gray-900 border-[1px] text-sm font-lighter h-60 flex flex-col justify-center pl-8 overflow-hidden">
+                        <div class="mb-1">
+                            <h1 class="text-[13px] font-bold ">DISCOUNT RANGE</h1>
+                        </div>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 10% and above</li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 20% and above</li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 30% and above</li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 40% and above</li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 50% and above</li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 60% and above</li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 70% and above</li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 80% and above</li>
+                        <li><i class="fa-regular fa-square mr-2 border-[1px] rounded-[2px] w-[14px] "
+                                style="color: transparent;"></i> 90% and above</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="flex flex-wrap justify-evenly h-[1250px] w-[100%] overflow-y-scroll">
+
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes1.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes2.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes3.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400  h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes4.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes5.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5 ">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes6.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes7.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes8.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes9.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5 ">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes10.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes11.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes12.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes13.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes14.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes1.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-xl shadow-gray-400 h-[330px] mx-5 mt-5">
+                        <div>
+                            <img class="h-[250px] w-[220px] bg-cover" src="../Male_Shoes/shoes5.jpg" alt="">
+                        </div>
+                        <div class="pl-3 mt-3">
+                            <p class=" text-[15px] font-semibold">Black Tape</p>
+                            <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                            <p class="font-medium text-sm">Rs.1399 <span
+                                    class="text-[9px] text-gray-400">Rs.2999</span><span
+                                    class="text-[10px] text-red-400">
+                                    (90% OFF)</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    <!-- filter section & collection end here -->
+    <hr>
+    <!-- mid paragraph start here -->
+    <div class="bg-cover bg-center h-[300px] mt-8 flex flex-col justify-center items-center text-white font-bold"
+        style="background-image: url('../bg-shoes/bg6.jpg');">
+        <div>
+            <p>Repair Services</p>
+        </div>
+        <div class="text-lg sm:text-2xl mt-2">
+            <p>Upto <span class="text-red-500">70% OFF</span>-All Shoes & Beauty ProducT</p>
+        </div>
+        <button class="bg-white w-[140px] h-10 text-black rounded-md hover:text-red-500 font-semibold mt-5">Explore
+            More</button>
+    </div>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- New arrival start here -->
+
+
+    <div id="new-arrival" class="flex flex-col justify-end items-center mt-5">
+        <div class="text-[30px] sm:text-[40px] font-bold ">
+            <p>ɴᴇᴡ ᴀʀʀɪᴠᴀʟ ғᴏʀ ᴡᴏᴍᴇɴ</p>
+        </div>
+        <div class="text-sm font-semibold text-slate-500">
+            <p>Winter & Summer Collection with Modern Design</p>
+        </div>
+
+        <div class="flex flex-wrap p-16 justify-center items-center">
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-2">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes1.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-2">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes2.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-2">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes3.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-2">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes4.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes5.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes6.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes7.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes8.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes9.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes11.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes12.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div class="hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes13.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+
+            <div id="hidden-image-1" class="hidden hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes9.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+
+            <div id="hidden-image-2" class="hidden hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes11.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+
+            <div id="hidden-image-3" class="hidden hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes12.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+
+            <div id="hidden-image-4" class="hidden hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes13.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+            <div id="hidden-image-5" class="hidden hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes9.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+
+            <div id="hidden-image-6" class="hidden hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes11.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+
+            <div id="hidden-image-7" class="hidden hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes12.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+
+            <div id="hidden-image-8" class="hidden hover:shadow-2xl shadow-gray-400  h-[330px] mx-8 mt-5">
+                <div>
+                    <img class="h-[250px] w-[220px] bg-cover" src="../Female_Shoes/women-shoes13.png" alt="">
+                </div>
+                <div class="pl-3 mt-3">
+                    <p class=" text-[15px] font-semibold">Black Tape</p>
+                    <p class="text-xs text-gray-400 font-thin ">Men Walking Shoes</p>
+                    <p class="font-medium text-sm">Rs.1399 <span class="text-[9px] text-gray-400">Rs.2999</span><span
+                            class="text-[10px] text-red-400">
+                            (90% OFF)</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button class="bg-green-500 w-16 h-10 m-1 text-xl text-white font-bold rounded-[4px]"><a
+                    href="#new-arrival">1</a></button>
+            <button id="btn-2-change"
+                class="bg-green-500 w-16 h-10 m-1 text-xl text-white font-bold rounded-[4px]">2</button>
+            <button id="arrow-btn" class="bg-green-500 w-16 h-10 m-1 text-xl text-white font-bold rounded-[4px]"><i
+                    class="fa-solid fa-arrow-right" style="color: white;"></i></button>
+        </div>
+
+    </div>
+    <!-- New arrival end here -->
+    <hr>
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+
+
+
+
+    <!-- LAST FOOTER START here -->
+    <div
+        class=" text-[9px] h-[200px] sm:text-[11px] md:text-[13px] lg:text-[14px] leading-relaxed sm:h-[210px] md:h-[240px] lg:h-[260px] bg-slate-600 text-white flex justify-evenly items-center mt-4 p-2">
+
+        <div>
+            <ul class=" flex flex-col  ">
+                <h1 class="text-[11px] sm:text-[13px] md:text-[15px] lg:text-[17px] mb-1 font-semibold">Get to Know
+                    Us
+                </h1>
+                <li>Portfolioxyz.com</li>
+                <li>Bahrampur Ghaziabad</li>
+                <li>8287119574</li>
+                <li>sujeetsk21@google.com</li>
+                <li>Contact form</li>
+
+            </ul>
+        </div>
+        <div>
+            <ul class=" flex flex-col  ">
+                <h1 class="text-[11px] mb-1 sm:text-[13px] md:text-[15px] lg:text-[17px] font-semibold">Contact
+                    Information</h1>
+                <li>Portfolioxyz.com</li>
+                <li>Bahrampur Ghaziabad</li>
+                <li>8287119574</li>
+                <li>sujeetsk21@google.com</li>
+                <li>Contact form</li>
+
+            </ul>
+        </div>
+        <div>
+            <ul class=" flex flex-col ">
+                <h1 class="text-[11px] mb-1 sm:text-[13px] md:text-[15px] lg:text-[17px] font-semibold">Home</h1>
+                <li>About us</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>Projects</li>
+                <li>Education</li>
+
+            </ul>
+        </div>
+
+        <div>
+            <ul class=" flex flex-col  ">
+                <h1 class="text-[11px] mb-1 sm:text-[13px] md:text-[15px] lg:text-[17px] font-semibold">Privacy
+                    Policy
+                </h1>
+                <li>Terms of Services</li>
+                <li>Copyright</li>
+                <li>Terms of Services</li>
+                <li>Copyright</li>
+                <li>XYZ Orgnization</li>
+
+            </ul>
+        </div>
+        <div>
+            <ul class=" flex flex-col">
+                <h1 class="text-[11px] mb-2 sm:text-[13px] md:text-[15px] lg:text-[17px] font-semibold">Ask Us</h1>
+                <li>FQAs</li>
+                <li>Certification</li>
+                <li>Hours of opertaion</li>
+                <li>Poliy</li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div
+        class="text-slate-300 flex flex-col justify-center items-center text-[7px] sm:text-[8px] md:text-[9px] lg:text-[10px] bg-gray-900">
+        <h1>Copyright Notice: @2001-2023 XYZ Orgnization</h1>
+        <h5>cookie policies</h5>
+    </div>
+
+    <!-- FOOTER END here -->
+
+
+
+
+
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>

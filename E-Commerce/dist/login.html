@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/Login Form</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+
+    <section class="flex justify-center items-center h-[100vh] w-auto">
+
+        <div id="login-form"
+            class=" text-white border-[1px] shadow-slate-400 shadow-xl h-[27rem] w-[350px] md:w-[400px] rounded-lg flex flex-col justify-center items-center mt-4">
+            <div>
+                <h1 class="text-black text-2xl font-bold float-left">Login</h1>
+            </div>
+            <form class="">
+
+
+                <div class="mt-6 relative">
+
+                    <input id="login-email" onkeyup="validEmail()"
+                        class="m-2 text-black border-b-2 border-gray-400 outline-none  bg-transparent pl-2 text-[16px] rounded-sm w-[230px] md:w-[280px]"
+                        type="text" placeholder="Email">
+                    <span id="email-error"
+                        class="absolute top-0 right-[10px] text-[10px] mt-[11px] text-red-500"></span>
+                </div>
+                <div class="mt-6 relative">
+
+                    <input id="login-password" onkeyup="validPassword()"
+                        class="m-2 text-black border-b-2 border-gray-400 outline-none  bg-transparent pl-2 text-[16px] rounded-sm w-[230px] md:w-[280px]"
+                        type="text" placeholder="Password">
+                    <span id="password-error"
+                        class="absolute top-0 right-[10px] text-[10px] mt-[11px] text-red-500"></span>
+                </div>
+
+                <div class="mt-3 mr-20">
+                    <p class="text-black text-xs">I agree to the <span class="text-pink-600 cursor-pointer">
+                            Terms&Condition</span></p>
+                </div>
+
+            </form>
+            <span id="login-error" class=" mt-3 text-[10px]"></span>
+            <button id="login-btn" onclick="ValidLogin()"
+                class="bg-orange-500 w-[18rem] rounded-[3px] h-10 text-white font-bold text-sm mt-5">Login</button>
+
+            <div class="mt-3">
+                <p class="text-black text-xs">Create a New Account <span id="signup-button"
+                        class="cursor-pointer text-orange-500">SignUp</span></p>
+            </div>
+            <div class="mt-6 mr-24">
+                <p class="text-black text-xs">have Trouble logging in?<span class="text-pink-600 cursor-pointer">Get
+                        help</span></p>
+            </div>
+
+        </div>
+
+
+        <!-- sign up start here -->
+        <div id="signup-form"
+            class="hidden border-[1px] bg-cyan-250 shadow-slate-400 shadow-xl h-[27rem] w-[350px] md:w-[400px] rounded-lg flex flex-col justify-center items-center mt-4">
+            <div>
+                <h1 class="text-black text-2xl font-bold float-left">SignUp</h1>
+            </div>
+            <form class="">
+
+                <div class="mt-6 relative">
+
+                    <input id="signup-name" onkeyup="SignupValidName()"
+                        class="m-2 text-black border-b-2 border-gray-400 outline-none bg-transparent pl-2 text-[16px] rounded-sm w-[230px] md:w-[280px]"
+                        type="text" placeholder="Name">
+                    <span id="signup-name-error" class="absolute top-0 right-[10px] text-[10px] mt-[11px]"></span>
+                </div>
+
+                <div class="mt-6 relative">
+
+                    <input id="signup-email" onkeyup="SignupValidEmail()"
+                        class="m-2 text-black border-b-2 border-gray-400 outline-none  bg-transparent pl-2 text-[16px] rounded-sm w-[230px] md:w-[280px]"
+                        type="text" placeholder="Email">
+                    <span id="signup-email-error" class="absolute top-0 right-[10px] text-[10px] mt-[11px] "></span>
+                </div>
+                <div class="mt-6 relative">
+
+                    <input id="signup-password" onkeyup="SignupValidPassword()"
+                        class="m-2 text-black border-b-2 border-gray-400 outline-none  bg-transparent pl-2 text-[16px] rounded-sm w-[230px] md:w-[280px]"
+                        type="text" placeholder="Create Password">
+                    <span id="signup-password-error" class="absolute top-0 right-[10px] text-[10px] mt-[11px] "></span>
+                </div>
+                <div class="mt-6 relative">
+
+                    <input id="signup-confirm-password" onkeyup="SignupVlidConfirmPassword()"
+                        class="m-2 text-black border-b-2 border-gray-400 outline-none  bg-transparent pl-2 text-[16px] rounded-sm w-[230px] md:w-[280px]"
+                        type="text" placeholder="Confirm Password">
+                    <span id="signup-confirm-password-error"
+                        class="absolute top-0 right-[10px] text-[10px] mt-[11px] "></span>
+                </div>
+
+
+
+            </form>
+            <span id="signup-btn-error" class=" text-[10px]"></span>
+            <button onclick="ValidSignUpBtn()"
+                class="bg-pink-500 w-[18rem] rounded-[3px] h-10 text-white font-bold text-sm mt-5">CONTINUE</button>
+
+            <div class="mt-3">
+                <p class="text-black text-xs">Already have an Account <span id="login-button"
+                        class="text-orange-600 cursor-pointer">Login</span></p>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        // changing login form to sign up form vice-versa
+        const SignupForm = document.getElementById('signup-form')
+        const LoginForm = document.getElementById('login-form')
+
+        const loginBtn = document.getElementById('login-button').addEventListener('click', () => {
+            SignupForm.style.display = "none";
+            LoginForm.style.display = "flex"
+
+        })
+
+
+        const SignupBtn = document.getElementById('signup-button').addEventListener('click', () => {
+            LoginForm.style.display = "none"
+            SignupForm.style.display = "flex";
+        })
+
+
+        // login validation code
+        const EmailError = document.getElementById('email-error')
+        const PasswordError = document.getElementById('password-error')
+        const LoginError = document.getElementById('login-error')
+
+
+        function validEmail() {
+            const LoginEmail = document.getElementById('login-email').value;
+
+            if (LoginEmail.length == "") {
+                EmailError.innerHTML = "Email is Required"
+                EmailError.style.color = "red"
+                return false
+            }
+            if (!LoginEmail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
+                EmailError.innerHTML = "Enter the Valid Enter"
+                EmailError.style.color = "red"
+                return false
+            }
+            EmailError.innerHTML = "Valid";
+            EmailError.style.color = "green"
+            return true;
+        }
+
+        function validPassword() {
+            const LoginPassword = document.getElementById('login-password').value;
+
+
+            if (LoginPassword.length == 0) {
+                PasswordError.innerHTML = "Password must be 8 digits";
+                PasswordError.style.color = "red"
+                return false;
+            }
+            if (!LoginPassword.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/)) {
+                PasswordError.innerHTML = "Please Use UpperCase & Special Character";
+                PasswordError.style.color = "red"
+
+                return false;
+            }
+            PasswordError.innerHTML = "Password is Strong";
+            PasswordError.style.color = "green"
+
+            return true;
+        }
+
+        function ValidLogin() {
+            if (!validEmail() || !validPassword()) {
+                LoginError.innerHTML = "Email/Password is Wrong Please Try Again";
+                LoginError.style.color = "red";
+            }
+            else {
+
+                LoginError.innerHTML = "Happy To See You Again Please go to Home Page"
+                LoginError.style.color = "green"
+
+                setTimeout(() => {
+
+                    document.getElementById('login-password').value = "";
+                    document.getElementById('login-email').value = "";
+                    document.getElementById('email-error').innerHTML = "";
+                    document.getElementById('password-error').innerHTML = "";
+                    document.getElementById('login-error').innerHTML = "";
+                }, 5000)
+            }
+        }
+
+        //   login validation end here
+
+
+
+
+        // signup validation start here
+
+
+        const SignupNameError = document.getElementById('signup-name-error')
+        const SignupEmailError = document.getElementById('signup-email-error')
+        const SignupPasswordError = document.getElementById('signup-password-error')
+        const SignupConfirmPasswordError = document.getElementById('signup-confirm-password-error')
+        const SignupBtnError = document.getElementById('signup-btn-error')
+
+
+        function SignupValidName() {
+            const SignupInputName = document.getElementById('signup-name').value;
+
+
+            if (SignupInputName.length == "") {
+                SignupNameError.innerHTML = "Name is Required";
+                SignupNameError.style.color = "red";
+                return false;
+            }
+            if (!SignupInputName.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                SignupNameError.innerHTML = "Please Enter Your Full Name"
+                SignupNameError.style.color = "red";
+                return false;
+            }
+            SignupNameError.innerHTML = "valid"
+            SignupNameError.style.color = "green";
+            return true;
+
+        }
+
+
+        function SignupValidEmail() {
+            const SignupInputEmail = document.getElementById('signup-email').value;
+
+            if (SignupInputEmail.length == "") {
+                SignupEmailError.innerHTML = "Email is Required";
+                SignupEmailError.style.color = "red";
+                return false;
+            }
+            if (!SignupInputEmail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
+                SignupEmailError.innerHTML = "PLease Enter The Valid Email";
+                SignupEmailError.style.color = "red";
+                return false;
+            }
+            SignupEmailError.innerHTML = "Valid";
+            SignupEmailError.style.color = "green";
+            return true;
+        }
+
+
+        function SignupValidPassword() {
+            const SignupInputPassword = document.getElementById('signup-password').value;
+
+            if (SignupInputPassword.length == "") {
+                SignupPasswordError.innerHTML = "Password must be 8 digits";
+                SignupPasswordError.style.color = "red"
+                return false;
+            }
+            if (!SignupInputPassword.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/)) {
+                SignupPasswordError.innerHTML = "Please Use UpperCase & Special Character";
+                SignupPasswordError.style.color = "red"
+                return false;
+            }
+            SignupPasswordError.innerHTML = "Valid";
+            SignupPasswordError.style.color = "green"
+            return true;
+        }
+
+        function SignupVlidConfirmPassword() {
+            const SignupInputConfirmPassword = document.getElementById('signup-confirm-password').value;
+            const SignupInputPassword = document.getElementById('signup-password').value;
+
+            if (SignupInputPassword === SignupInputConfirmPassword) {
+                SignupConfirmPasswordError.innerHTML = "Passwords match!";
+                SignupConfirmPasswordError.style.color = "green";
+                return true;
+
+            }
+            else {
+                SignupConfirmPasswordError.innerHTML = "Passwords are not matching?";
+                SignupConfirmPasswordError.style.color = "red";
+                return false;
+
+            }
+
+        }
+
+        function ValidSignUpBtn() {
+
+            if (!SignupValidName() || !SignupValidEmail() || !SignupValidPassword() || !SignupVlidConfirmPassword()) {
+                SignupBtnError.innerHTML = "Please Enter The Valid Details";
+                SignupBtnError.style.color = "red";
+
+            } else {
+                SignupBtnError.innerHTML = "Succesfully Created your FootWear Account!";
+                SignupBtnError.style.color = "green";
+
+                setTimeout(() => {
+
+                    document.getElementById('signup-name').value = "";
+                    document.getElementById('signup-email').value = "";
+                    document.getElementById('signup-password').value = "";
+                    document.getElementById('signup-confirm-password').value = "";
+
+                    document.getElementById('signup-btn-error').innerHTML = "";
+                    document.getElementById('signup-name-error').innerHTML = "";
+                    document.getElementById('signup-email-error').innerHTML = "";
+                    document.getElementById('signup-password-error').innerHTML = "";
+                    document.getElementById('signup-confirm-password-error').innerHTML = "";
+
+                }, 5000)
+            }
+
+        }
+
+        // signup validation end here
+    </script>
+
+</body>
+
+</html>
